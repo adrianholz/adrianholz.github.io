@@ -295,14 +295,14 @@ section > div:nth-child(1).active,
   }
 }
 
-/* @keyframes slide {
+@keyframes slide {
   0% {
     background-position: 0% 50%;
   }
   100% {
     background-position: 90% 50%;
   }
-} */
+}
 
 @keyframes pulse {
   0% {
