@@ -5,7 +5,7 @@ const splash = document.querySelector(".splash");
 const sections = document.querySelectorAll(
   "section > div:nth-child(1), .contact .contact-inner"
 );
-const halve = window.innerHeight * 0.4;
+const halve = window.innerHeight * 0.5;
 
 occupation_front.addEventListener("click", function handleClick() {
   occupation_card.classList.add("card-rotation");
