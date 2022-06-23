@@ -1,0 +1,123 @@
+.contact {
+  background: var(--db5);
+  padding: 20px;
+  position: relative;
+  z-index: 0;
+}
+
+.contact-inner {
+  padding: 200px 0 120px 0;
+  max-width: 1160px;
+  margin: 0 auto;
+}
+
+.contact .section-heading {
+  padding-bottom: 40px;
+  padding-top: unset;
+}
+
+.contact-info {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 40px;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.contact-info > div:nth-child(1) {
+  max-width: 380px;
+}
+
+.contact-info > div:nth-child(1) > p:nth-child(1),
+.contact-info > div:nth-child(1) > p:nth-child(2) {
+  font-size: 1.25em;
+  font-weight: 500;
+  line-height: 1.5em;
+  color: var(--db2);
+}
+
+.contact-info > div:nth-child(1) > p:nth-child(3) {
+  font-size: 1.25em;
+  font-weight: 700;
+  padding-top: 10px;
+  line-height: 1.5em;
+  color: var(--db1);
+}
+
+.contact-info > div:nth-child(2) {
+  text-align: right;
+}
+
+.contact-info > div:nth-child(2) > span {
+  font-size: 1.25em;
+  padding-bottom: 10px;
+  display: block;
+  font-weight: 700;
+  color: var(--db1);
+  text-transform: uppercase;
+}
+
+.contact-info > div:nth-child(2) > a {
+  font-size: 1.25em;
+  display: block;
+  font-weight: 700;
+  color: var(--dw3);
+}
+
+.contact-info > div:nth-child(2) > span:nth-child(3) {
+  padding-top: 20px;
+}
+
+.contact .section-ending {
+  padding-top: 40px;
+}
+
+.copyright {
+  display: flex;
+  position: relative;
+  justify-content: center;
+  background: var(--bnoise);
+  box-sizing: border-box;
+  padding: 20px;
+  text-align: center;
+  z-index: 1;
+}
+
+.copyright span {
+  font-size: 1.125em;
+  line-height: 1.5em;
+  color: var(--db2);
+}
+
+.copyright span a {
+  color: var(--db1);
+  font-weight: 600;
+}
+
+.contact .neon-blur-40,
+.contact .neon-blur-20,
+.contact .neon-blur-10 {
+  z-index: -1;
+  height: 10px;
+  top: unset;
+  bottom: -10px;
+}
+
+@media (max-width: 782px) {
+  .contact-info,
+  .contact-info > div:nth-child(2) {
+    text-align: center;
+  }
+  .contact-info {
+    justify-content: center;
+  }
+  .contact .section-ending {
+    text-align: center;
+    font-size: 3em;
+  }
+  .contact .section-heading {
+    padding: 0 0 40px 0;
+    font-size: 3em;
+    text-align: center;
+  }
+}

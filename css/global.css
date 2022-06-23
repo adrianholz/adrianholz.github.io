@@ -1,0 +1,342 @@
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+  font-family: "Chakra Petch", sans-serif;
+  position: relative;
+}
+
+ol,
+ul {
+  list-style: none;
+}
+
+blockquote,
+q {
+  quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.card-rotation {
+  transform: rotateX(180deg);
+}
+
+.separator-black {
+  transform: skewY(-1.5deg);
+  background: var(--db5);
+  position: absolute;
+  z-index: 3;
+  width: 100%;
+  bottom: 140px;
+  height: 120px;
+}
+
+.separator-gray {
+  transform: skewY(1.5deg);
+  background: var(--db4);
+  position: absolute;
+  z-index: 3;
+  width: 100%;
+  bottom: -40px;
+  height: 120px;
+}
+
+.subheading {
+  color: var(--db2);
+  font-weight: 600;
+  font-style: italic;
+  text-align: center;
+  display: none;
+}
+
+.section-heading,
+.subheading {
+  position: relative;
+  z-index: 2;
+}
+
+.section-heading {
+  background: var(--gradient);
+  background-clip: text;
+  -webkit-background-clip: text;
+  background-size: 400% 400%;
+  animation: slide 2s linear infinite;
+  color: rgba(0, 0, 0, 0);
+  font-size: 4em;
+  font-weight: 600;
+  padding: 20px 0 60px 0;
+}
+
+.section-ending {
+  display: block;
+  font-size: 4em;
+  font-weight: 600;
+  padding-top: 80px;
+  text-align: right;
+  color: var(--db3);
+}
+
+.blur20 {
+  filter: blur(20px);
+}
+
+.blur10 {
+  filter: blur(10px);
+}
+
+.blur5 {
+  filter: blur(5px);
+}
+
+.decorator-gray {
+  width: 600px;
+  height: 600px;
+  position: absolute;
+  background: linear-gradient(
+    230deg,
+    rgba(38, 29, 34, 0.8),
+    rgba(0, 0, 0, 0),
+    rgba(0, 0, 0, 0)
+  );
+  border-radius: 50%;
+  top: 300px;
+  right: 10%;
+  z-index: 1;
+}
+
+.splash {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  z-index: 5;
+}
+
+.splash > div:nth-child(1) {
+  position: fixed;
+  width: 50%;
+  height: 100vh;
+  background: var(--db3);
+  animation: intro 1.5s ease forwards;
+  animation-delay: 0.2s;
+}
+
+.splash > div:nth-child(2) {
+  position: fixed;
+  width: 50%;
+  height: 100vh;
+  right: 0;
+  background: var(--db3);
+  animation: intro 1.5s ease forwards;
+  animation-delay: 0.2s;
+}
+
+.splash > div:nth-child(3) {
+  position: fixed;
+  width: 50%;
+  height: 100vh;
+  background: linear-gradient(210deg, var(--d1), var(--d2));
+  animation: intro 1s ease forwards;
+  animation-delay: 0.2s;
+}
+
+.splash > div:nth-child(4) {
+  position: fixed;
+  width: 50%;
+  height: 100vh;
+  right: 0;
+  background: linear-gradient(-210deg, var(--d1), var(--d2));
+  animation: intro 1s ease forwards;
+  animation-delay: 0.2s;
+}
+
+.splash.vanish {
+  display: none;
+}
+
+@keyframes intro {
+  0% {
+    width: 50%;
+  }
+  100% {
+    width: 0%;
+  }
+}
+
+@keyframes slide {
+  0% {
+    background-position: 0% 50%;
+  }
+  100% {
+    background-position: 90% 50%;
+  }
+}
+
+@keyframes pulse {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+  75% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+@keyframes float {
+  0% {
+    transform: translateY(-5px);
+  }
+  50% {
+    transform: translateY(5px);
+  }
+  100% {
+    transform: translateY(-5px);
+  }
+}
+
+@media (max-width: 700px) {
+  .section-heading {
+    padding: 0 0 40px 0;
+    font-size: 3em;
+    text-align: center;
+  }
+  .subheading {
+    display: block;
+  }
+  .section-ending {
+    text-align: center;
+    padding: unset;
+    font-size: 3em;
+  }
+  .decorator-gray {
+    width: 400px;
+    height: 400px;
+    right: 20px;
+    top: 450px;
+    display: block;
+  }
+}

@@ -1,0 +1,40 @@
+@import url(global.css);
+@import url(header.css);
+@import url(main.css);
+@import url(services.css);
+@import url(education.css);
+@import url(projects.css);
+@import url(certificates.css);
+@import url(skills.css);
+@import url(contact.css);
+
+:root {
+  /* CSS Utilitário das cores do site */
+  --d1: #d70a84;
+  --d2: #51127f;
+  --db1: #595557;
+  --db2: #40393d;
+  --db3: #261d22;
+  --db4: #191116;
+  --db5: #0d050a;
+  --dw1: #f7f0f4;
+  --dw2: #ede1e8;
+  --dw3: #d9cad3;
+  --gradient: linear-gradient(
+    90deg,
+    var(--d1),
+    var(--d2),
+    var(--d1),
+    var(--d2)
+  );
+  --noise: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 200 220'%3E%3Cfilter id='noiseFilter'%3E%3CfeTurbulence type='franctalNoise' baseFrequency='8'%3E%3C/feTurbulence%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noiseFilter)'/%3E%3C/svg%3E");
+  --noise-min: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 120'%3E%3Cfilter id='noiseFilter'%3E%3CfeTurbulence type='franctalNoise' baseFrequency='8'%3E%3C/feTurbulence%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noiseFilter)'/%3E%3C/svg%3E");
+  --bnoise: linear-gradient(rgba(25, 17, 22, 0.8), var(--db5)), var(--noise),
+    linear-gradient(var(--db4), var(--db5));
+  --bnoise-min: linear-gradient(rgba(25, 17, 22, 0.8), var(--db5)),
+    var(--noise-min), linear-gradient(var(--db4), var(--db5));
+  --gnoise: linear-gradient(rgba(38, 29, 34, 0.8), var(--db4)), var(--noise),
+    linear-gradient(var(--db3), var(--db4));
+  --gnoise-min: linear-gradient(rgba(38, 29, 34, 0.8), var(--db4)),
+    var(--noise-min), linear-gradient(var(--db3), var(--db4));
+}

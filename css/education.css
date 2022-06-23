@@ -1,0 +1,221 @@
+.education {
+  background: var(--db5);
+  padding: 20px;
+  position: relative;
+}
+
+.education-inner {
+  padding: 180px 0 140px 0;
+  position: relative;
+  z-index: 1;
+  max-width: 1160px;
+  margin: 0 auto;
+}
+
+.graduations {
+  display: grid;
+  gap: 30px;
+  margin-top: 30px;
+  grid-template-columns: repeat(4, 1fr);
+}
+
+.graduation {
+  background: var(--bnoise);
+  position: relative;
+  z-index: 2;
+  box-sizing: border-box;
+  padding: 16px;
+  border-radius: 5px;
+  transition: 0.3s ease;
+}
+
+.graduation:hover {
+  transform: translateY(-10px);
+}
+
+.graduation-inner {
+  position: relative;
+  z-index: 2;
+}
+
+.graduation img {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 1;
+}
+
+.graduation h3,
+.graduation h4 {
+  font-size: 1.3em;
+  text-transform: uppercase;
+  color: var(--dw1);
+  font-weight: 600;
+  padding: 8px 0 16px 0;
+}
+
+.graduation p {
+  color: var(--db2);
+  line-height: 1.25em;
+}
+
+.graduation span {
+  color: var(--db1);
+  text-transform: uppercase;
+  font-weight: 700;
+}
+
+.fatec,
+.anhembi {
+  grid-row: span 3;
+  max-width: 280px;
+}
+
+.fatec p,
+.anhembi p {
+  padding-bottom: 16px;
+}
+
+.army {
+  grid-column: span 2;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+}
+
+.etec h4,
+.fisk h4,
+.army h4 {
+  padding-bottom: unset;
+}
+
+.completion-fatec,
+.completion-anhembi {
+  display: flex;
+  gap: 4px;
+  justify-content: center;
+  padding-top: 8px;
+}
+
+.completion-fatec span,
+.completion-anhembi span {
+  display: block;
+  height: 30px;
+  background: var(--db3);
+}
+
+.completed {
+  background: linear-gradient(var(--d1), var(--d2)) !important;
+}
+
+.completion-fatec span {
+  width: 40px;
+}
+
+.completion-anhembi span {
+  width: 60px;
+}
+
+.completion-fatec span:nth-child(1),
+.completion-anhembi span:nth-child(1) {
+  border-radius: 15px 0 0 15px;
+}
+
+.completion-fatec span:nth-child(6),
+.completion-anhembi span:nth-child(4) {
+  border-radius: 0 15px 15px 0;
+}
+
+.education .decorator-gray {
+  top: 200px;
+  right: 2%;
+  background: linear-gradient(
+    230deg,
+    rgba(25, 17, 22, 0.85),
+    rgba(0, 0, 0, 0),
+    rgba(0, 0, 0, 0)
+  );
+}
+
+.graduation-inner .subheading,
+.etec .subheading {
+  text-transform: unset;
+  position: absolute;
+  bottom: 298px;
+  left: -15px;
+  display: block;
+}
+
+.etec .subheading {
+  bottom: 148px;
+  left: 0;
+}
+
+.education .separator-black {
+  left: 0;
+  bottom: -40px;
+}
+
+.education .neon-blur-10,
+.education .neon-blur-20,
+.education .neon-blur-40 {
+  z-index: 2;
+  transform: skewY(-1.5deg);
+  top: unset;
+  bottom: -40px;
+  right: 0;
+  height: 10px;
+}
+
+@media (max-width: 1180px) {
+  .graduations {
+    grid-template-columns: 1fr 1fr;
+    max-width: 600px;
+    margin: 30px auto 0 auto;
+  }
+  .army {
+    max-width: 630px;
+  }
+
+  .fatec,
+  .anhembi {
+    margin-bottom: 40px;
+  }
+  .etec,
+  .fisk {
+    max-width: 280px;
+  }
+}
+
+@media (max-width: 700px) {
+  .graduations {
+    display: block;
+    margin: 0 auto;
+    max-width: 280px;
+  }
+  .etec .subheading {
+    left: 40px;
+  }
+  .graduation {
+    margin-bottom: 40px;
+  }
+  .etec {
+    margin-top: 80px;
+  }
+  .army {
+    grid-template-columns: 1fr;
+  }
+  .army h4 {
+    padding-bottom: 16px;
+  }
+  .education .decorator-gray {
+    top: 240px;
+  }
+  .graduation-inner .subheading {
+    left: 35px;
+  }
+  .education .section-heading {
+    padding-bottom: 100px;
+  }
+}

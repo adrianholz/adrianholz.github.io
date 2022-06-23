@@ -1,0 +1,123 @@
+.header-content {
+  background: var(--bnoise);
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+  position: relative;
+  z-index: 2;
+}
+
+.logo a img {
+  width: 80px;
+  margin: 0 40px;
+}
+
+nav {
+  padding: 0 30px;
+  margin: 0 auto;
+}
+
+nav ul {
+  display: flex;
+  flex-wrap: wrap;
+  justify-self: center;
+  gap: 30px;
+}
+
+nav ul li {
+  display: block;
+  margin: 0 auto;
+}
+
+nav ul li a {
+  font-weight: 600;
+  font-style: italic;
+  color: var(--db2);
+  background: var(--gradient);
+  background-clip: text;
+  -webkit-background-clip: text;
+  background-size: 400% 400%;
+  animation: slide 2s linear infinite;
+  text-shadow: 0px 0px 1px var(--db5), 0px 0px 2px var(--db5),
+    0px 0px 4px var(--db5);
+  transition: 0.3s ease-in-out;
+}
+
+nav ul li a:hover {
+  color: rgba(0, 0, 0, 0);
+  text-shadow: none;
+}
+
+.button {
+  padding: 0 40px;
+  margin: 35px 0;
+}
+
+.button a {
+  position: relative;
+  color: var(--db2);
+  font-weight: 700;
+  padding: 10px 20px;
+  background: var(--bnoise);
+  border-radius: 3px;
+  transition: 0.3s ease-in-out;
+}
+
+.button a:hover {
+  background: none;
+  color: var(--dw1);
+}
+
+.button a::before {
+  position: absolute;
+  content: "Hire me";
+  text-align: center;
+  padding: 13px 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  border-radius: 3px;
+  background-image: var(--gradient);
+  background-size: 400% 400%;
+  animation: slide 2s linear infinite;
+  transition: opacity 0.3s ease-in-out;
+  opacity: 0;
+}
+
+.button a:hover::before {
+  opacity: 1;
+}
+
+.neon {
+  display: block;
+  position: relative;
+  z-index: 1;
+}
+
+.neon-blur-40,
+.neon-blur-20,
+.neon-blur-10 {
+  display: block;
+  position: absolute;
+  top: -46px;
+  left: 0;
+  right: 0;
+  height: 50px;
+  background: var(--gradient);
+  background-size: 400% 400%;
+  animation: slide 2s linear infinite;
+}
+
+.neon-blur-40 {
+  filter: blur(40px);
+}
+
+.neon-blur-20 {
+  filter: blur(20px);
+}
+
+.neon-blur-10 {
+  filter: blur(10px);
+}

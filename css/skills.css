@@ -1,0 +1,97 @@
+.skills {
+  background: var(--db4);
+  padding: 20px;
+  position: relative;
+  z-index: 1;
+}
+
+.skills-inner {
+  padding: 200px 0 120px 0;
+  max-width: 1160px;
+  margin: 0 auto;
+}
+
+.competences {
+  display: flex;
+  gap: 60px;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.competences > div {
+  width: 240px;
+  height: 240px;
+  background: var(--bnoise);
+  position: relative;
+  border-radius: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3), 0 2px 5px rgba(0, 0, 0, 0.4);
+}
+
+.competences > div::before,
+.competences > div::after {
+  content: "";
+  width: 260px;
+  height: 260px;
+  position: absolute;
+  top: -10px;
+  background: var(--gradient);
+  background-size: 400% 400%;
+  animation: pulse 2s linear infinite;
+  border-radius: 50%;
+  z-index: -1;
+}
+
+.competences > div::after {
+  filter: blur(10px);
+}
+
+.competences h3 {
+  font-size: 3em;
+  font-weight: 700;
+  color: var(--dw3);
+  text-transform: uppercase;
+}
+
+.competences > div span {
+  text-transform: uppercase;
+  font-size: 1.5em;
+  font-weight: 700;
+  color: var(--db2);
+}
+
+.skills .decorator-gray {
+  z-index: -2;
+  top: 200px;
+}
+
+.skills .separator-gray {
+  left: 0;
+  bottom: -40px;
+}
+
+.skills .neon-blur-10,
+.skills .neon-blur-20,
+.skills .neon-blur-40 {
+  z-index: 2;
+  transform: skewY(1.5deg);
+  top: unset;
+  bottom: -40px;
+  right: 0;
+  height: 10px;
+}
+
+@media (max-width: 700px) {
+  .skills .section-heading {
+    padding-bottom: 80px;
+  }
+  .skills .section-ending {
+    padding-top: 80px;
+  }
+  .skills .decorator-gray {
+    top: 380px;
+  }
+}

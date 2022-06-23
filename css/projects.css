@@ -1,0 +1,169 @@
+.projects {
+  background: var(--db4);
+  padding: 20px;
+  position: relative;
+}
+
+.projects h1 {
+  padding-bottom: 80px;
+}
+
+.projects-inner {
+  padding: 200px 0 120px 0;
+  max-width: 1160px;
+  margin: 0 auto;
+}
+
+.project {
+  max-width: 400px;
+  position: relative;
+  z-index: 2;
+  border-radius: 20px;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3), 0 2px 5px rgba(0, 0, 0, 0.4);
+  transition: transform 0.3s ease;
+}
+
+.project:hover {
+  transform: translateY(-10px);
+}
+
+.old-portfolio,
+.petshop,
+.waluigi,
+.dilucca {
+  width: 400px;
+  height: 264px;
+  background-position: top;
+  background-size: cover;
+  transition: background-position 0.5s ease-in-out;
+  position: relative;
+  border-radius: 20px 20px 0 0;
+}
+
+.project:hover .old-portfolio,
+.project:hover .petshop,
+.project:hover .waluigi,
+.project:hover .dilucca {
+  transition: background-position 6s ease-in-out;
+  background-position: bottom;
+}
+
+.project-cards img {
+  position: absolute;
+  width: 400px;
+  height: 264px;
+  top: 0;
+  left: 0;
+  transition: opacity 0.5s ease-in-out;
+  border-radius: 20px 20px 0 0;
+  transition-delay: 0.5s;
+}
+
+.project:hover img {
+  opacity: 0;
+  transition-delay: unset;
+}
+
+.project-cards {
+  display: grid;
+  position: relative;
+  grid-template-columns: 400px 400px;
+  gap: 60px;
+  justify-content: center;
+}
+
+.project-cards .decorator-gray {
+  top: -140px;
+  right: 26px;
+}
+
+.old-portfolio {
+  background: url(../img/webp/site1.webp);
+}
+
+.petshop {
+  background: url(../img/webp/site2.webp);
+}
+
+.waluigi {
+  background: url(../img/webp/site3.webp);
+}
+
+.dilucca {
+  background: url(../img/webp/site4.webp);
+}
+
+.project-description {
+  background: var(--gnoise);
+  text-align: center;
+  border-radius: 0 0 20px 20px;
+}
+
+.project-description h3 {
+  text-transform: uppercase;
+  padding-top: 20px;
+  color: var(--db1);
+  font-size: 1.5em;
+  font-weight: 700;
+  transition: color 0.3s ease;
+}
+
+.project:hover h3 {
+  color: var(--dw3);
+}
+
+.project-description a {
+  display: block;
+  font-size: 1.125em;
+  line-height: 1.125em;
+  font-weight: 500;
+  font-style: italic;
+  margin: 10px 0 20px 0;
+  background: var(--gradient);
+  background-clip: text;
+  -webkit-background-clip: text;
+  background-size: 400% 400%;
+  animation: slide 2s linear infinite;
+  color: rgba(0, 0, 0, 0);
+}
+
+.projects .separator-gray {
+  left: 0;
+  bottom: -40px;
+}
+
+.projects .neon-blur-10,
+.projects .neon-blur-20,
+.projects .neon-blur-40 {
+  z-index: 2;
+  transform: skewY(1.5deg);
+  top: unset;
+  bottom: -40px;
+  right: 0;
+  height: 10px;
+}
+
+@media (max-width: 870px) {
+  .project-cards {
+    grid-template-columns: 350px;
+  }
+  .projects .section-ending {
+    padding-top: 80px;
+  }
+  .project-cards .decorator-gray {
+    top: -60px;
+    right: 0;
+  }
+  .old-portfolio,
+  .petshop,
+  .waluigi,
+  .dilucca,
+  .project-cards img {
+    width: 350px;
+    height: 231px;
+    background-size: 350px;
+  }
+  .project {
+    max-width: 350px;
+  }
+}
