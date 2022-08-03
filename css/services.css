@@ -17,7 +17,7 @@
 }
 
 .service .subheading {
-  color: var(--db2);
+  color: var(--db1);
   display: block;
   font-weight: 600;
   font-style: italic;
@@ -101,6 +101,7 @@
 
 .service-back p {
   font-style: italic;
+  font-weight: 500;
   color: var(--db1);
   line-height: 1.5em;
 }
@@ -146,6 +147,14 @@
   height: 10px;
 }
 
+.services-page{
+  padding: 400px 20px 200px 20px;
+}
+
+.services-decorator{
+  top: 440px;
+}
+
 @media (max-width: 700px) {
   .services {
     margin: -380px auto 0 auto;
@@ -159,5 +168,17 @@
   .company-services,
   .my-services {
     margin: 20px 0 60px 0;
+  }
+  .services-page{
+    padding: 500px 20px 150px 20px;
+  }
+  .services-decorator{
+    top: 555px;
+  }
+  .services .section-ending{
+    padding-top: 80px;
+  }
+  .services-page .section-ending{
+    padding: unset;
   }
 }

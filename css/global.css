@@ -237,7 +237,7 @@ a {
   height: 100vh;
   background: var(--db3);
   animation: intro 1.5s ease forwards;
-  animation-delay: 0.2s;
+  animation-delay: 0.4s;
 }
 
 .splash > div:nth-child(2) {
@@ -247,7 +247,7 @@ a {
   right: 0;
   background: var(--db3);
   animation: intro 1.5s ease forwards;
-  animation-delay: 0.2s;
+  animation-delay: 0.4s;
 }
 
 .splash > div:nth-child(3) {
@@ -256,7 +256,7 @@ a {
   height: 100vh;
   background: linear-gradient(210deg, var(--d1), var(--d2));
   animation: intro 1s ease forwards;
-  animation-delay: 0.2s;
+  animation-delay: 0.4s;
 }
 
 .splash > div:nth-child(4) {
@@ -266,7 +266,7 @@ a {
   right: 0;
   background: linear-gradient(-210deg, var(--d1), var(--d2));
   animation: intro 1s ease forwards;
-  animation-delay: 0.2s;
+  animation-delay: 0.4s;
 }
 
 .splash.vanish {
@@ -286,12 +286,45 @@ section > div:nth-child(1).active,
   transform: translate3d(0, 0, 0);
 }
 
+.tooltip{
+  position: absolute;
+  z-index: 5;
+  color: var(--dw3);
+  box-shadow: 0 0 4px rgba(0, 0, 0, 0.6), 0 0 2px rgba(0, 0, 0, 0.8);
+  padding: 12px;
+  background: var(--gnoise);
+  border-radius: 5px;
+  font-weight: 500;
+  max-width: 200px;
+  line-height: 1.25em;
+  width: 100%;
+  animation: fade-in 0.2s forwards;
+}
+
+@keyframes fade-in{
+  0%{
+    opacity: 0;
+  }
+  100%{
+    opacity: 1;
+  }
+}
+
 @keyframes intro {
   0% {
     width: 50%;
   }
   100% {
     width: 0%;
+  }
+}
+
+@keyframes outro {
+  0% {
+    width: 0%;
+  }
+  100% {
+    width: 50%;
   }
 }
 

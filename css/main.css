@@ -16,6 +16,7 @@
   flex: 0 0 500px;
   height: 500px;
   border-radius: 50%;
+  cursor: help;
   background: linear-gradient(
       210deg,
       rgba(25, 17, 22, 0.8),
@@ -29,7 +30,7 @@
 .name h1 {
   font-size: 4.5em;
   text-align: center;
-  padding-top: 130px;
+  margin-top: 130px;
   color: var(--dw1);
 }
 
@@ -64,10 +65,11 @@
 
 .developer,
 .designer {
+  cursor: help;
   position: relative;
   height: 230px;
   flex: 0 0 220px;
-  border-radius: 3px;
+  border-radius: 5px;
   color: var(--db3);
   font-weight: 700;
   background: var(--bnoise);
@@ -418,6 +420,8 @@
   }
   .occupation-front h3:nth-child(2) {
     display: block;
+    color: rgba(0, 0, 0, 0);
+    text-shadow: none;
     font-size: 1.25em;
     line-height: 1em;
   }

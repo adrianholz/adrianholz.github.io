@@ -38,3 +38,23 @@
   --gnoise-min: linear-gradient(rgba(38, 29, 34, 0.8), var(--db4)),
     var(--noise-min), linear-gradient(var(--db3), var(--db4));
 }
+
+.gnoise-button,
+.bnoise-button{
+  width: 112px;
+  margin: 80px auto 0 auto;
+}
+
+.gnoise-button a{
+  background: var(--gnoise);
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3), 0 2px 5px rgba(0, 0, 0, 0.4);
+}
+
+.bnoise-button a{
+  background: var(--bnoise);
+}
+
+.gnoise-button a::before, 
+.bnoise-button a::before{
+  content: "See more";
+}

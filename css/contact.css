@@ -31,9 +31,9 @@
 .contact-info > div:nth-child(1) > p:nth-child(1),
 .contact-info > div:nth-child(1) > p:nth-child(2) {
   font-size: 1.25em;
-  font-weight: 500;
+  font-weight: 400;
   line-height: 1.5em;
-  color: var(--db2);
+  color: var(--db1);
 }
 
 .contact-info > div:nth-child(1) > p:nth-child(3) {

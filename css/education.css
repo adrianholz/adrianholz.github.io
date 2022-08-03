@@ -56,7 +56,7 @@
 }
 
 .graduation p {
-  color: var(--db2);
+  color: var(--db1);
   line-height: 1.25em;
 }
 
@@ -140,6 +140,7 @@
 
 .graduation-inner .subheading,
 .etec .subheading {
+  color: var(--db1);
   text-transform: unset;
   position: absolute;
   bottom: 298px;
@@ -217,5 +218,8 @@
   }
   .education .section-heading {
     padding-bottom: 100px;
+  }
+  .education .section-ending{
+    padding-top: 80px;
   }
 }
