@@ -388,4 +388,9 @@ section > div:nth-child(1).active,
   .tooltip{
     display: none;
   }
+  @keyframes slide {
+    100% {
+      background-position: 0% 50%;
+    }
+  }
 }
