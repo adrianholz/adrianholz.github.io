@@ -154,4 +154,7 @@
     top: -100px;
     right: 5px;
   }
+  .documents div{
+    cursor: unset;
+  }
 }

@@ -8,11 +8,20 @@ export default function tooltip() {
   });
 
   function handleEnter() {
+    const windowSize = window.innerWidth * 0.5;
     const box = createTooltip(this);
     document.body.appendChild(box);
     this.addEventListener("mousemove", (event) => {
-      box.style.top = event.pageY + 20 + "px";
-      box.style.left = event.pageX + 20 + "px";
+      if (window.matchMedia("(min-width:1600px)").matches) {
+        box.style.top = event.pageY + 20 + "px";
+        box.style.left = event.pageX + 20 + "px";
+      } else if (event.clientX < windowSize) {
+        box.style.top = event.pageY + 20 + "px";
+        box.style.left = event.pageX + 20 + "px";
+      } else {
+        box.style.top = event.pageY + 20 + "px";
+        box.style.left = event.pageX - 230 + "px";
+      }
     });
     name.addEventListener(
       "click",

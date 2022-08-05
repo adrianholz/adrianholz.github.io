@@ -431,4 +431,9 @@
   .main .neon-blur-10 {
     bottom: 310px;
   }
+  .name, 
+  .developer, 
+  .designer{
+    cursor: unset;
+  }
 }
