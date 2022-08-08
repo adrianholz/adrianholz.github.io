@@ -49,7 +49,10 @@
         </ul>
       </nav>
       <div class="button">
-        <a href="#contact">Hire me</a>
+        <a data-contact>Message me</a>
+      </div>
+      <div class="menu-mobile">
+        <span></span>
       </div>
     </div>
     <span class="neon" aria-hidden="true">
@@ -526,6 +529,32 @@
   <div class="copyright">
     <span>Adrian Holzschuh Media // Hosted at <a href="https://botucatu.hostnet.com.br" target="_blank">Hostnet Internet</a></span>
   </div>
+
+  <section class="modal-container" data-modal="container">
+    <div class="modal">
+      <h2 class="section-heading">&lt;Direct message&gt;</h2>
+      <form action="https://form.ultramail.com.br/" method="POST" name="directMessage">
+        <div>
+          <label for="name">//Name</label>
+          <input class="modal-input" type="text" for="name" id="name">
+        </div>
+        <div>
+          <label for="email">//Email</label>
+          <input class="modal-input" type="email" for="email" id="email">
+        </div>
+        <div>
+          <label for="message">//Message</label>
+          <textarea class="modal-input" rows="5" name="message" id="message"></textarea>
+        </div>
+        <div class="button send-button">
+          <a>Close</a>
+          <a>Send message</a>
+        </div>
+        <input type="hidden" name="key" value="eyJpdiI6IkJYWlBTZG1RbFROanRzaEFVODdZblE9PSIsInZhbHVlIjoiemxvQ0drczg0SThOdmdaQ1E5bDZuVFlNSU5TNzZvZkpMbUI4SmNuZEZ6b0JIR3I4MG9iN3VzQmdVTzVuV1k5eVFxQllrMWYzbHdORGNKZWl0R3JySTh4MitZOVkwQlwvdUxqZlhwS3dXVWxmSVNpZ3dTeVFMQUd2S2tYNk1IWkh1RUNqR2hIZklHNjhEOTdhVDFxbzVrQ00ySE5nTGxlXC8zM1hmbCt6NEtyWUJaekM5ZVo1bEhBWmVIWUY2S2pkXC90MWlEZXhRKzdhQWFKQjd2Uk52K0tuQT09IiwibWFjIjoiNzk0NTFhYjA4YTM2MWJiOWU4MDg5NDZmMDkwMGU0ZmE4MWYyMjY1ZjhiZTU1NDQzMTBiNjFmZWFmNmMyYzA0MSJ9">
+      </form>
+      <span class="section-ending">&lt;/Direct message&gt;</span>
+    </div>
+  </section>
 
   <script type="module" src="js/script.js"></script>
 

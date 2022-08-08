@@ -44,7 +44,11 @@ nav ul li a {
   transition: 0.3s ease-in-out;
 }
 
-nav ul li a:hover {
+nav ul li:hover {
+  cursor: pointer;
+}
+
+nav ul li:hover a {
   color: rgba(0, 0, 0, 0);
   text-shadow: none;
 }
@@ -52,6 +56,7 @@ nav ul li a:hover {
 .button {
   padding: 0 40px;
   margin: 35px 0;
+  cursor: pointer;
 }
 
 .button a {
@@ -71,7 +76,7 @@ nav ul li a:hover {
 
 .button a::before {
   position: absolute;
-  content: "Hire me";
+  content: "Message me";
   text-align: center;
   padding: 13px 0;
   top: 0;
@@ -88,6 +93,10 @@ nav ul li a:hover {
 
 .button a:hover::before {
   opacity: 1;
+}
+
+.menu-mobile {
+  display: none;
 }
 
 .neon {
@@ -120,4 +129,91 @@ nav ul li a:hover {
 
 .neon-blur-10 {
   filter: blur(10px);
+}
+
+@media (max-width: 700px) {
+  .header-content {
+    flex-wrap: nowrap;
+    justify-content: space-between;
+  }
+  .logo a img {
+    width: 80px;
+    margin: 0 0 0 40px;
+  }
+  nav {
+    position: absolute;
+    right: 15px;
+    top: 110px;
+    display: none;
+  }
+  nav.active{
+    display: unset;
+    animation: mobile 0.2s forwards;
+  }
+  nav ul {
+    background: linear-gradient(rgba(38, 29, 34, 0.6), rgba(25, 17, 22, 0.4));
+    border-radius: 16px;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3), 0 2px 5px rgba(0, 0, 0, 0.4);
+    backdrop-filter: blur(7.3px);
+    -webkit-backdrop-filter: blur(7.3px);
+    padding: 20px 20px 20px 30px;
+    gap: 20px;
+    flex-direction: column;
+    align-items: end;
+  }
+  nav ul li {
+    margin: unset;
+    background: linear-gradient(rgba(64, 57, 61, 0.2), rgba(25, 17, 22, 0.1));
+    border-radius: 5px;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1), 0 2px 5px rgba(0, 0, 0, 0.2);
+    backdrop-filter: blur(7.3px);
+    -webkit-backdrop-filter: blur(7.3px);
+    padding: 12px;
+  }
+  .menu-mobile {
+    display: block;
+    padding: 12px;
+    margin-right: 38px;
+    transition: transform 0.2s ease;
+    cursor: pointer;
+  }
+  .menu-mobile span{
+    position: relative;
+    display: block;
+    width: 28px;
+    border-radius: 2px;
+    height: 3px;
+    background: var(--db1);
+  }
+  .menu-mobile span::before {
+    content: "";
+    position: absolute;
+    width: 28px;
+    border-radius: 2px;
+    height: 3px;
+    background: var(--db1);
+    bottom: 10px;
+  }
+  .menu-mobile span::after{ 
+    content: "";
+    position: absolute;
+    width: 28px;
+    border-radius: 2px;
+    height: 3px;
+    background: var(--db1);
+    top: 10px;
+  }
+  .menu-mobile.active{
+    transform: rotate(90deg);
+  }
+  /* @keyframes mobile {
+    from {
+      opacity: 0;
+      transform: translate3d(0, -30px, 0);
+    }
+    to {
+      opacity: 1;
+      transform: translate3d(0, 0, 0);
+    }
+  } */
 }

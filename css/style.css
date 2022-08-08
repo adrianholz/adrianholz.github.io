@@ -20,6 +20,7 @@
   --dw1: #f7f0f4;
   --dw2: #ede1e8;
   --dw3: #d9cad3;
+
   --gradient: linear-gradient(
     90deg,
     var(--d1),
@@ -39,22 +40,3 @@
     var(--noise-min), linear-gradient(var(--db3), var(--db4));
 }
 
-.gnoise-button,
-.bnoise-button{
-  width: 112px;
-  margin: 80px auto 0 auto;
-}
-
-.gnoise-button a{
-  background: var(--gnoise);
-  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3), 0 2px 5px rgba(0, 0, 0, 0.4);
-}
-
-.bnoise-button a{
-  background: var(--bnoise);
-}
-
-.gnoise-button a::before, 
-.bnoise-button a::before{
-  content: "See more";
-}
