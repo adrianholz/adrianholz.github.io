@@ -40,3 +40,18 @@
     var(--noise-min), linear-gradient(var(--db3), var(--db4));
 }
 
+@media (max-width: 700px) {
+  * {
+    background-size: unset !important;
+  }
+  :root {
+    --gradient: linear-gradient(
+    90deg,
+    var(--d1),
+    var(--d2)
+    );
+  }
+  .bg-cover {
+    background-size: cover !important;
+  }
+}
