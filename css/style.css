@@ -56,11 +56,19 @@
     background-size: cover !important;
   }
   .splash,
-  .neon-blur-10,
+  .neon-blur-20,
   .neon-blur-40 {
     display: none;
   }
-  .neon-blur-20 {
-    top: -46px;
+  .neon-blur-10 {
+    height: 50px !important;
+    top: -40px;
+    bottom: -50px !important;
+  }
+  .main .neon-blur-10 {
+    bottom: 300px !important;
+  }
+  .contact .neon-blur-10 {
+    bottom: -40px !important;
   }
 }
