@@ -43,6 +43,7 @@
 @media (max-width: 700px) {
   * {
     background-size: unset !important;
+    animation: unset !important;
   }
   :root {
     --gradient: linear-gradient(
@@ -53,5 +54,13 @@
   }
   .bg-cover {
     background-size: cover !important;
+  }
+  .splash,
+  .neon-blur-10,
+  .neon-blur-40 {
+    display: none;
+  }
+  .neon-blur-20 {
+    top: -46px;
   }
 }

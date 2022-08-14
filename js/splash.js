@@ -16,13 +16,15 @@ export default function splash() {
   });
 
   function handlerClick(event) {
-    event.preventDefault();
-    splash.classList.remove("vanish");
-    children.forEach((child) => {
-      child.style.animation = "outro 1s ease forwards";
-    });
-    setTimeout(() => {
-      window.location.href = this.children[0].href;
-    }, 1000);
+    if (window.matchMedia("(min-width: 700px)").matches) {
+      event.preventDefault();
+      splash.classList.remove("vanish");
+      children.forEach((child) => {
+        child.style.animation = "outro 1s ease forwards";
+      });
+      setTimeout(() => {
+        window.location.href = this.children[0].href;
+      }, 1000);
+    }
   }
 }
