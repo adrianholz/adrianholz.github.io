@@ -118,11 +118,11 @@
 
 .modal-container.active {
   display: flex;
-  animation: modal-container .3s forwards;
+  animation: modal-container 0.3s forwards;
 }
 
-.modal-container.active .modal{
-  animation: modal .3s forwards;
+.modal-container.active .modal {
+  animation: modal 0.3s forwards;
 }
 
 .modal {
@@ -222,33 +222,31 @@
   content: "Send message";
 }
 
-.send-button a:nth-child(1){
+.send-button a:nth-child(1) {
   margin-right: 10px;
 }
 
-.send-button a:nth-child(1)::before{
+.send-button a:nth-child(1)::before {
   content: "Close";
 }
 
-/* @keyframes modal {
+@keyframes modal {
   from {
-    opacity: 0;
     transform: translate3d(0, -30px, 0);
   }
   to {
-    opacity: 1;
     transform: translate3d(0, 0, 0);
   }
 }
 
-@keyframes modal-container{
+@keyframes modal-container {
   from {
     opacity: 0;
   }
   to {
     opacity: 1;
   }
-} */
+}
 
 @media (max-width: 782px) {
   .contact-info,
@@ -272,7 +270,7 @@
 @media (max-width: 700px) {
   .modal .section-heading,
   .modal .section-ending {
-    font-size: 1.9em;
+    display: none;
   }
   .modal form {
     grid-template-columns: 1fr;

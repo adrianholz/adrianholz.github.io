@@ -286,7 +286,7 @@ section > div:nth-child(1).active,
   transform: translate3d(0, 0, 0);
 }
 
-.tooltip{
+.tooltip {
   position: absolute;
   z-index: 5;
   color: var(--dw3);
@@ -301,11 +301,11 @@ section > div:nth-child(1).active,
   animation: fade-in 0.2s forwards;
 }
 
-@keyframes fade-in{
-  0%{
+@keyframes fade-in {
+  0% {
     opacity: 0;
   }
-  100%{
+  100% {
     opacity: 1;
   }
 }
@@ -328,14 +328,14 @@ section > div:nth-child(1).active,
   }
 }
 
-@keyframes slide {
+/* @keyframes slide {
   0% {
     background-position: 0% 50%;
   }
   100% {
     background-position: 90% 50%;
   }
-}
+} */
 
 @keyframes pulse {
   0% {
@@ -385,7 +385,7 @@ section > div:nth-child(1).active,
     top: 450px;
     display: block;
   }
-  .tooltip{
+  .tooltip {
     display: none;
   }
   @keyframes slide {

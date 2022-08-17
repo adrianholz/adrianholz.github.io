@@ -46,11 +46,7 @@
     animation: unset !important;
   }
   :root {
-    --gradient: linear-gradient(
-    90deg,
-    var(--d1),
-    var(--d2)
-    );
+    --gradient: linear-gradient(90deg, var(--d1), var(--d2));
   }
   .bg-cover {
     background-size: cover !important;
@@ -70,5 +66,14 @@
   }
   .contact .neon-blur-10 {
     bottom: -40px !important;
+  }
+  nav.active {
+    animation: mobile 0.2s forwards !important;
+  }
+  .modal-container.active {
+    animation: modal-container 0.3s forwards !important;
+  }
+  .modal-container.active .modal {
+    animation: modal 0.3s forwards !important;
   }
 }
