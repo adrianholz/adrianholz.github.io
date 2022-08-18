@@ -196,7 +196,7 @@
 }
 
 .send-button {
-  width: 248px;
+  width: 175px;
   margin: 20px 0 0 0;
   padding: unset;
   grid-column: 2;
@@ -219,7 +219,7 @@
 }
 
 .send-button a::before {
-  content: "Send message";
+  content: "Send";
 }
 
 .send-button a:nth-child(1) {
