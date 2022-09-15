@@ -94,4 +94,10 @@
   .skills .decorator-gray {
     top: 380px;
   }
+  .skills-page .skills-inner {
+    padding: 100px 0 120px 0;
+  }
+  .skills-page .decorator-gray {
+    top: 170px;
+  }
 }
