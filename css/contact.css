@@ -271,6 +271,7 @@
   .send-button {
     justify-self: center;
     display: flex;
+    margin: unset;
   }
   .send-button a {
     padding: 13px 20px;
