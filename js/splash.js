@@ -2,13 +2,13 @@ export default function splash() {
   const splash = document.querySelector(".splash");
   let links;
 
-  if (location.href.includes("index")) {
+  if (location.href.includes("index") || window.location.pathname == "/") {
     links = document.querySelectorAll(".gnoise-button, .bnoise-button, .logo");
   } else {
     links = Array.from(
       document.querySelectorAll(
-        ".gnoise-button, .bnoise-button, .logo, nav ul li"
-      )
+        ".gnoise-button, .bnoise-button, .logo, nav ul li",
+      ),
     ).slice(0, -1);
   }
 
