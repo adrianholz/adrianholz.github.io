@@ -270,5 +270,9 @@
   }
   .send-button {
     justify-self: center;
+    display: flex;
+  }
+  .send-button a {
+    padding: 13px 20px;
   }
 }
