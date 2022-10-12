@@ -30,6 +30,8 @@
 
 .old-portfolio,
 .petshop,
+.ricardo,
+.demetria,
 .waluigi,
 .dilucca {
   width: 400px;
@@ -43,6 +45,8 @@
 
 .project:hover .old-portfolio,
 .project:hover .petshop,
+.project:hover .ricardo,
+.project:hover .demetria,
 .project:hover .waluigi,
 .project:hover .dilucca {
   transition: background-position 6s ease-in-out;
@@ -73,6 +77,10 @@
   justify-content: center;
 }
 
+.projects-page .project-cards {
+  grid-template-columns: 400px 400px 400px;
+}
+
 .project-cards .decorator-gray {
   top: -140px;
   right: 26px;
@@ -84,6 +92,14 @@
 
 .petshop {
   background: url(../img/webp/site2.webp);
+}
+
+.ricardo {
+  background: url(../img/webp/site5.webp);
+}
+
+.demetria {
+  background: url(../img/webp/site6.webp);
 }
 
 .waluigi {
@@ -144,8 +160,15 @@
   height: 10px;
 }
 
+@media (max-width: 1350px) {
+  .projects-page .project-cards {
+    grid-template-columns: 400px 400px;
+  }
+}
+
 @media (max-width: 870px) {
-  .project-cards {
+  .project-cards,
+  .projects-page .project-cards {
     grid-template-columns: 350px;
   }
   .projects .section-ending {
@@ -157,6 +180,8 @@
   }
   .old-portfolio,
   .petshop,
+  .ricardo,
+  .demetria,
   .waluigi,
   .dilucca,
   .project-cards img {
